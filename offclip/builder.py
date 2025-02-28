@@ -6,8 +6,8 @@ from . import loss
 from offclip.constants import *
 
 def build_offclip_model(cfg):
-    CARZero_model = models.offclip_model.OFFCLIP(cfg)
-    return CARZero_model
+    offclip_model = models.offclip_model.OFFCLIP(cfg)
+    return offclip_model
 
 def build_dqn_wo_self_atten_mlp_module(cfg):
     fusion = models.dqn_wo_self_atten_mlp.TQN_Model(cfg)
