@@ -14,8 +14,13 @@ pip install -r requirments.txt
 ## Train
 
 ## Validation
+### Weight checkpoints  
+Download the [offclip checkpoint](https://drive.google.com/file/d/1JmfB2jbl-58aBrxRwaMrGjhPNUUjKNC-/view?usp=drive_link) to test validation.
 
 ### Zero-shot classification for multi-label datasets
+```bash
+python3 validation.py --weight_path {weight path to load} --save_name {name to save similarities and results} -c configs/offclip.yaml
+```
 
 ### Pointing game
 
