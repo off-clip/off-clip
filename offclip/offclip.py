@@ -12,7 +12,7 @@ random.seed(10)
 
 _MODELS = {
     "OFFCLIP_resnet50": "",
-    "OFFCLIP_vit_b_16": "./checkpoint/paper/Carzero/CARZero_best_model.ckpt"
+    "OFFCLIP_vit_b_16": "./checkpoint/paper/offclip/offclip_best_model.ckpt"
 }
 
 
@@ -21,7 +21,7 @@ _FEATURE_DIM = {"OFFCLIP_resnet50": 2048, "OFFCLIP_vit_b_16": 768 }
 
 
 def available_models() -> List[str]:
-    """Returns the names of available CARZero models"""
+    """Returns the names of available offclip models"""
     return list(_MODELS.keys())
 
 def load_offclip_validation(cfg, state_dict):
@@ -112,7 +112,7 @@ def dqn_shot_classification(offclip_model, imgs, cls_txt_mapping):
     Parameters
     ----------
     offclip_model : str
-        CARZero model, load via CARZero.load_models()
+        offclip model, load via offclip.load_models()
     imgs:
         processed images using offclip_model.process_img
     cls_txt_mapping:
