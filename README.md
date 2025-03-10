@@ -20,7 +20,7 @@ pip install -r requirments.txt
 ## Train
 The training loss code will be publicly released after the acceptance notification. 
 
-For the text filtering, we utilized the trained abnomaly sentence-level classificatio model, and you can downloaded the model on this link: [Anomaly-Classification](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=sharing).
+For the text filtering, we utilized the trained abnomaly sentence-level classificatio model, and you can downloaded the model on this link: [Anomaly-Classification](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link).
 
 ## Validation
 ### Weight checkpoints  
